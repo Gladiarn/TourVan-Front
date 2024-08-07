@@ -1,0 +1,145 @@
+.about-container{
+    width: 100%;
+    padding: 3rem 15vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    position: relative;
+
+    min-height: 400px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.about-container h2{
+    font-size: 1.8rem;
+}
+
+.why-book{
+    display: flex;
+    gap: 3vw;
+}
+
+.why-icon{
+
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.why-icon{
+    font-size: 2rem;
+}
+
+.benefit:nth-of-type(1) .why-icon{
+    background-color:#B6D8F2;
+    border-radius: 83% 17% 70% 30% / 40% 35% 65% 60% ;
+}
+
+.benefit:nth-of-type(2) .why-icon{
+    background-color:#F4CFDF;
+    border-radius: 30% 70% 45% 55% / 30% 89% 11% 70% ;
+}
+
+.benefit:nth-of-type(3) .why-icon{
+    background-color:#CCD4BF;
+    border-radius: 79% 21% 100% 0% / 65% 78% 22% 35% ;
+}
+
+.benefit:nth-of-type(4) .why-icon{
+    background-color:#E5DB9C;
+    border-radius: 79% 21% 47% 53% / 65% 78% 22% 35% ;
+}
+
+.benefit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.why-pagination button{
+    height: 8px;
+    width: 8px;
+    background-color: rgb(192, 192, 192);
+    border: none;
+    border-radius: 50%;
+
+}
+
+.why-pagination{
+    display: flex;
+    gap: .25rem;
+    position: absolute;
+
+    bottom: 0;
+    display: none;
+}
+
+@media (width <= 1655px){
+    .about-container{
+        padding: 3rem 10vw;
+    }
+}
+
+@media (width <= 1355px){
+    .about-container{
+        padding: 3rem 4vw;
+    }
+}
+
+@media (width <= 900px){
+
+    .about-container{
+        padding: 3rem 3vw;
+    }
+
+    .benefit h3{
+        font-size: 1.05rem;
+    }
+    
+    .benefit p{
+        font-size: .8rem;
+    }
+}
+
+@media (width <= 725px){
+
+
+    .about-container{
+        padding: 1rem 3vw;
+        min-height: 300px;
+        justify-content: flex-start;
+    }
+
+    .benefit h3{
+        font-size: 1.05rem;
+    }
+    
+    .benefit p{
+        font-size: .8rem;
+    }
+
+    .benefit{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 80%;
+    }
+
+    .why-pagination{
+        display: flex;
+    }
+
+}
+

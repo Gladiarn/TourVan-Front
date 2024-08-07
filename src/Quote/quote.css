@@ -1,0 +1,25 @@
+.quote-container{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2c8ba00c;
+    padding: 2.5rem;
+}
+
+.quote{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.quote p, .quote h2{
+    text-align: center;
+}
+
+.quote h2{
+    font-size: 2rem;
+    font-weight: 900;
+}

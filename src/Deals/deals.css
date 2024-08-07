@@ -1,0 +1,43 @@
+.deals-container{
+    position: relative;
+    min-height: 500px;
+    padding: 5rem 7vw;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+
+}
+
+.deals-header{
+    color: rgba(112, 112, 112, 0.692);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+    white-space:nowrap;
+    padding: 0 1rem;
+    background-color: white;
+
+
+}
+
+.deals-body{
+    font-size: 1.25rem;
+
+}
+
+.main-card-container{
+    display: flex;
+
+}
+
+@media (width <= 700px){
+    .deals-header{
+        font-size: .9rem;
+    }
+    .deals-body{
+        font-size: 1rem;
+    }
+}

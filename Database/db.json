@@ -1,0 +1,59 @@
+{
+    "records": [
+      {
+        "id": 1,
+        "Name": "San Juanico Bridge",
+        "Url": "https://images.unsplash.com/photo-1625119264099-17f9757291bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Description": "A scenic bridge connecting Leyte and Samar, known for its impressive length and beautiful views.",
+        "BookingCount": 123,
+        "OriginalPrice": 200,
+        "DiscountedPrice": 150
+      },
+      {
+        "id": 2,
+        "Name": "Leyte Landing Memorial",
+        "Url": "https://nationalparks-15bc7.kxcdn.com/images/parks/macarthur-landing-memorial/20211001180904-MacArthur%20Landing%20Memorial%20blue%20sky.jpg?width=1170&height=360",
+        "Description": "A historical site commemorating the Allied forces' landing during World War II, featuring a monument and a museum.",
+        "BookingCount": 456,
+        "OriginalPrice": 650,
+        "DiscountedPrice": 450
+      },
+      {
+        "id": 3,
+        "Name": "Tacloban City Hall",
+        "Url": "https://lh3.googleusercontent.com/p/AF1QipNU2FuTKGIZopQa_LBkWZQFVIK5j0XhKMkXzf-k=s680-w680-h510",
+        "Description": "The seat of the local government in Tacloban City, notable for its historical significance and architectural style.",
+        "BookingCount": 789,
+        "OriginalPrice": 400,
+        "DiscountedPrice": 200
+      },
+      {
+        "id": 4,
+        "Name": "Red Beach",
+        "Url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/c3/9b/d5/caption.jpg?w=1200&h=-1&s=1",
+        "Description": "A beach with historical significance as the landing site of the American forces during World War II, popular for its relaxing atmosphere.",
+        "BookingCount": 101,
+        "OriginalPrice": 1000,
+        "DiscountedPrice": 800
+      },
+      {
+        "id": 5,
+        "Name": "Sto. Niño Shrine and Heritage Museum",
+        "Url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Santo_Ni%C3%B1o_Shrine_and_Heritage_Museum_Tacloban_2023-11-17.jpg/1280px-Santo_Ni%C3%B1o_Shrine_and_Heritage_Museum_Tacloban_2023-11-17.jpg",
+        "Description": "A historic shrine and museum showcasing religious artifacts, antiques, and the heritage of Tacloban City.",
+        "BookingCount": 350,
+        "OriginalPrice": 500,
+        "DiscountedPrice": 400
+      },
+      {
+        "id": 6,
+        "Name": "Madonna of Japan",
+        "Url": "https://steemitimages.com/640x0/https://scontent.fceb2-1.fna.fbcdn.net/v/t1.0-9/63568_155441744484420_3892161_n.jpg?oh=2b5aa500e14e5c823d6e6a3c645945fa&oe=5A25413E",
+        "Description": "A peaceful park featuring a statue of the Madonna of Japan, symbolizing peace and friendship between the Philippines and Japan.",
+        "BookingCount": 150,
+        "OriginalPrice": 100,
+        "DiscountedPrice": 80
+      }
+    ]
+  }
+  

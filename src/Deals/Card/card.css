@@ -1,0 +1,138 @@
+
+
+
+.card-container{
+    min-width: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: all .1s ease-in-out;
+    border-radius: 8px;
+    transition: all .1s ease-in-out;
+
+    cursor: pointer;
+}
+
+.card-container:hover .card-visit,
+.card-container:hover .card-description,
+.card-container:hover .card-name{
+
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    
+}
+    
+.card-container:hover .card-price .discounted h3{
+    color: red;
+}
+
+.card-body{
+    padding: 0 2px;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.card-image img{
+    height: 200px;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    object-fit: cover;
+
+
+}
+
+
+
+.card-name{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    font-size: 1.1rem;
+    color: #26474E;
+
+}
+
+
+.card-name .name-icon{
+    font-size: 1.5rem;
+    color: #26474E;
+}
+
+.card-description{
+    font-size: .9rem;
+    text-align: start;
+
+}
+
+.card-visit{
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: 800;
+    color: #26474E;
+    gap: 3px;
+}
+
+.card-price{
+
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+}
+
+.card-price h3{
+    font-size: 1.05rem;
+}
+
+.card-price :nth-child(2){
+    font-size: .8rem;
+    position: relative;
+    color: rgba(112, 112, 112, 0.74);
+}
+
+.card-price :nth-child(2)::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: rgba(112, 112, 112, 0.74);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.discounted{
+    display: flex;
+    color: #26474E;
+}
+
+.discounted h3{
+    margin-left: 5px;
+    color: black
+}
+
+.card-name, .card-description, .card-visit, .card-price{
+    padding: 2px;
+}
+
+.card-image{
+    position: relative;
+}
+
+.sale-icon{
+    position: absolute;
+    z-index: 10;
+    font-size: 2rem;
+    background-color: white;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid #26474E;
+
+    color: #26474E;
+}
