@@ -12,6 +12,7 @@
 
     min-height: 400px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+    border: 1px solid red;
 }
 
 .about-container h2{
@@ -79,11 +80,12 @@
 
 .why-pagination{
     display: flex;
-    gap: .25rem;
+    gap: .75rem;
     position: absolute;
 
-    bottom: 0;
     display: none;
+    bottom: 25px;
+
 }
 
 @media (width <= 1655px){
@@ -135,6 +137,10 @@
         left: 50%;
         transform: translateX(-50%);
         min-width: 80%;
+    }
+
+    .benefit:nth-child(1){
+        z-index: 1;
     }
 
     .why-pagination{
