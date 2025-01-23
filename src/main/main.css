@@ -9,3 +9,27 @@
 body{
     background-color: white;
 }
+
+
+/* Customize scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px; 
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #26474E; 
+    border-radius: 10px;
+    border: 3px solid white; 
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #1c3a42; 
+  }
+  

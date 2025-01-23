@@ -1,0 +1,108 @@
+.dashboardnavbar-container{
+
+    width: 100%;
+    background-color: #1a3236;
+
+    height: 3.5rem;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-top: .1rem;
+    gap: .5rem;
+}
+
+.list{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+
+    
+}
+
+.list-anchor{
+    display: flex;
+    padding: 1rem 2.5rem;
+
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+
+    gap: .5rem;
+    text-decoration: none;
+
+
+}
+
+.list:hover .list-anchor::after,
+.list.active .list-anchor::after{
+    content: "";
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: -35px 35px 0 10px white;
+    pointer-events: none;
+
+    
+}
+
+.list:hover .list-anchor::before,
+.list.active .list-anchor::before{
+    content: "";
+    position: absolute;
+    left: -50px;
+    bottom: 0px;
+    width: 50px;
+    height: 50px;
+
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px white;
+    pointer-events: none;
+}
+
+
+.list:hover, .list.active{
+    background-color: white;
+    
+}
+
+.list:hover .dashboardIcons,
+.list:hover .nav-text,
+.list.active .dashboardIcons,
+.list.active .nav-text{
+    color: #1a3236;
+}
+
+
+
+
+
+
+
+
+
+
+
+.dashboardIcons{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.nav-text{
+    font-size: 1.2rem;
+    color: white;
+    
+}

@@ -1,0 +1,109 @@
+.footer-container{
+    min-height: 250px;
+    background-color: black;
+    padding: 2rem 15vw;
+}
+
+.socials{
+    color: white;
+    font-size: 1.6rem;
+    
+    display: flex;
+    gap: 1.75rem;
+    justify-content: center;
+
+
+}
+
+.socials-icon{
+    cursor: pointer;
+    transition: color .1s ease-out;
+}
+
+.socials-icon:hover{
+    color: rgba(255, 255, 255, 0.404);
+}
+
+.numbers{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+
+    gap: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+
+
+}
+
+.numbers h2{
+    font-size: 1.25rem;
+}
+
+.contacts{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.telephone, .mobile{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.copyrights-head{
+    color: white;
+    display: flex;
+    gap: 2rem;
+}
+
+.copyrights{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+
+    text-align: center;
+
+
+}
+
+
+
+
+.footer-links{
+    display: flex;
+    gap: .5rem;
+}
+
+
+
+
+
+@media (width <= 650px){
+    .footer-container{
+        padding: 2rem 5vw;
+    }
+}
+
+@media (width <= 450px){
+    .footer-container{
+        padding: 2rem 3vw;
+    }
+
+    .socials{
+
+        font-size: 1.4rem;
+    }
+
+    .telephone, .mobile, .copyrights-head{
+        font-size: .9rem;
+    }
+
+}

@@ -10,6 +10,8 @@
 .home-container {
   position: relative;
   width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 .background {
@@ -51,8 +53,8 @@
 
 .booking-container {
   text-align: start;
-  margin-bottom: 5rem;
   background-color: white;
+  margin-bottom: 5rem;
   width: 600px;
   height: 70px;
   border-radius: 50px;
@@ -61,6 +63,60 @@
   align-items: center;
   padding: 0 1rem;
   z-index: 10;
+  position: relative;
+}
+
+.result-box{
+  position: absolute;
+  border-radius: 10px;
+  top: 90px;
+  left: 0;
+  background-color: white;
+  width: 600px;
+  padding: .5rem;
+  font-size: 1.05rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.705) 0px 3px 7px -3px;
+}
+
+.result-box ul li{
+  list-style: none;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.result-box ul li:hover{
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.result-box ul{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.result-box ul::before {
+  top: -12px; 
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid rgba(0, 0, 0, 0.090); 
+  z-index: 100; 
+}
+
+.result-box ul::after {
+  top: -10px; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white; 
+  z-index: 101; 
+}
+
+.result-box ul::before, .result-box ul::after {
+  content: '';
+  position: absolute;
+  left: 15%;
+  transform: translateX(-75%);
+  width: 0;
+  height: 0;
 }
 
 .phone-booking {
@@ -91,6 +147,15 @@
   color: rgba(46, 46, 46, 0.849);
 }
 
+.where-phone, .when-phone, .howmany-phone {
+  height: 30px;
+  border: none;
+  outline: none;
+  width: 145px;
+  color: rgba(46, 46, 46, 0.849);
+}
+
+
 .clear-icon {
   cursor: pointer;
   margin-left: 1rem;
@@ -113,6 +178,67 @@
   align-items: center;
   justify-content: center;
   margin-left: auto;
+  transform: scale(1);
+  transition: all .1s ease-in-out;
+}
+
+.result-box-phone{
+  position: absolute;
+  border-radius: 10px;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 350px;
+  padding: .5rem;
+  font-size: 1.05rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.705) 0px 3px 7px -3px;
+}
+
+.result-box-phone ul li{
+  list-style: none;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.result-box-phone ul li:hover{
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.result-box-phone ul{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.result-box-phone ul::before {
+  top: -12px; 
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid rgba(0, 0, 0, 0.090); 
+  z-index: 100; 
+}
+
+.result-box-phone ul::after {
+  top: -10px; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white; 
+  z-index: 101; 
+}
+
+.result-box-phone ul::before, .result-box-phone ul::after {
+  content: '';
+  position: absolute;
+  left: 11rem;
+  transform: translateX(-75%);
+  width: 0;
+  height: 0;
+}
+
+.book-btn:hover{
+  transform: scale(.93);
+
 }
 
 .where::placeholder, .howmany::placeholder {
@@ -157,6 +283,91 @@
   right: 10px;
 }
 
+.popup-form{
+  position: fixed;
+
+  background-color: rgb(255, 255, 255);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  max-height: 190px;
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  z-index: 9999999;
+  border: 1px solid #26474E;
+}
+
+.popup-form .book-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.popup-btn{
+  padding: .5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  border: 1px solid #26474E;
+  background-color: #26474E;
+  color: white;
+
+}
+
+.phone-closer{
+  position: absolute;
+  top: -.5rem;
+  right: -.5rem;
+  background-color: #ffffff;
+  border: 1px solid #26474E;
+
+  display: flex;
+}
+
+.phone-icon{
+  font-size: 1.2rem;
+
+}
+
+.popup-btn .btn-icon{
+  font-size: 1.2rem;
+}
+
+.popup-form .book-date input{
+  width: 6.5rem;
+}
+
+.popup-form .book-search{
+  margin-bottom: 2rem;
+}
+
+.popup-form .book-search input::placeholder{
+  padding-left: 1rem;
+  
+}
+
+.popup-form .book-input input{
+  margin-left: 1rem;
+  width: 2rem;
+}
+
+
 @media (max-width: 900px) {
   .background {
     height: clamp(325px, 35vh, 400px);
@@ -171,6 +382,10 @@
     gap: .3rem;
     padding: 0 1rem;
     margin-bottom: 2rem;
+  }
+
+  .result-box{
+    width: 500px;
   }
 
   .where, .when, .howmany {

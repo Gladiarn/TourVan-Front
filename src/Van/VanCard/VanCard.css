@@ -1,0 +1,42 @@
+.vancard-container{
+    display: flex;
+    flex-direction: column;
+    
+    color: #26474E;
+    padding: .5rem;
+    
+    background-color: white;
+    border: 1px solid  #26474E;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 6px;
+
+    position: relative;
+}
+
+.vancard-header{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.header-holder{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.seat-holder{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vancard-body{
+    margin-top: .5rem;
+    display: flex;
+    gap: .5rem;
+    
+}
+.vancard-icons{
+    font-size: 1.2rem;
+}

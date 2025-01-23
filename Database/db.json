@@ -19,6 +19,15 @@
         "DiscountedPrice": 450
       },
       {
+        "id": 2,
+        "Name": "For Example",
+        "Url": "https://nationalparks-15bc7.kxcdn.com/images/parks/macarthur-landing-memorial/20211001180904-MacArthur%20Landing%20Memorial%20blue%20sky.jpg?width=1170&height=360",
+        "Description": "A historical site commemorating the Allied forces' landing during World War II, featuring a monument and a museum.",
+        "BookingCount": 456,
+        "OriginalPrice": 650,
+        "DiscountedPrice": 450
+      },
+      {
         "id": 3,
         "Name": "Tacloban City Hall",
         "Url": "https://lh3.googleusercontent.com/p/AF1QipNU2FuTKGIZopQa_LBkWZQFVIK5j0XhKMkXzf-k=s680-w680-h510",

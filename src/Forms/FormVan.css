@@ -1,0 +1,30 @@
+.van-form-container{
+    min-height: 85vh;
+
+    padding: 1.5rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid blue;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    width: 100%;
+    max-width: 600px;
+}
+
+.add-van-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+}
+
+.add-van-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}

@@ -5,14 +5,14 @@ const Popular = () => {
 
     const [data, setData] = useState([]);
 
-    const url = 'http://localhost:9000/records';
+    const url = 'http://localhost:5000/api/tours/available';
 
     useEffect(()=>{
   
       async function FetchRecord(){
         try{
           const res = await( await fetch(url)).json();
-          const sortedData = res.sort((a,b) => b.BookingCount - a.BookingCount);
+          const sortedData = res.sort((a,b) => b.bookingCount - a.bookingCount);
           const topThree = sortedData.slice(0,3)
           setData(topThree);
         }
@@ -38,14 +38,14 @@ const Popular = () => {
             
             <div className='visit-card-container'>
             {data.map((record)=>(
-                <div className='visit-container'>
+                <div className='visit-container' key={record._id}>
                     <div className='visit-img-container'>
-                        <img src={record.Url} alt="" />
+                        <img src={record.pictureUrl} alt="" />
                     </div>
 
                     <div className='visit-body'>
-                        <p className='visit-name-container'>{record.Name}</p>
-                        <p className='visit-visit-container'>{record.BookingCount} Activities</p>
+                        <p className='visit-name-container'>{record.name}</p>
+                        <p className='visit-visit-container'>{record.bookingCount} Activities</p>
                     </div>
                     
 

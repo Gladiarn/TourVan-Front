@@ -1,0 +1,102 @@
+
+.usermodal-container{
+    width: 200px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.705) 0px 3px 7px -3px;
+    position: absolute;
+    z-index: 100;
+    left: -100px;
+    top: 57px;
+}
+
+.usermodal-body{
+    position: relative;
+}
+
+.usermodal-body::before, .usermodal-body::after {
+    content: '';
+    position: absolute;
+    left: 75%;
+    transform: translateX(-75%);
+    width: 0;
+    height: 0;
+}
+
+.usermodal-body::before {
+    top: -12px; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgba(0, 0, 0, 0.090); 
+    z-index: 100; 
+}
+
+.usermodal-body::after {
+    top: -10px; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white; 
+    z-index: 101; 
+}
+
+
+.modal-icons{
+    font-size: 1.5rem;
+}
+
+
+
+
+.login-signup{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+
+.login-signup a{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: .5rem;
+    gap: .5rem;
+    text-decoration: none;
+    color: #26474E;
+    
+}
+
+.login-signup a:hover,
+.logout-container a:hover,
+.logoutbutton:hover{
+    background-color: rgba(0, 0, 0, 0.048);
+}
+
+.logout-container{
+    border-top: 1px solid rgba(128, 128, 128, 0.35);
+}
+
+.logout-container a{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: .5rem;
+    gap: .5rem;
+    text-decoration: none;
+    color: #26474E;
+}
+
+.login-signup, .logout-container{
+    padding: .5rem 1rem;
+}
+
+.logoutbutton{
+    display: flex;
+    border: none;
+    background: none;
+    color: #26474E;
+    font-size: 1.1rem;
+    padding: .5rem;
+    gap: .5rem;
+    cursor: pointer;
+    width: 100%;
+}

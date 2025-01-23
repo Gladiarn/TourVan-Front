@@ -1,0 +1,319 @@
+.van-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    z-index: 999999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.van-main{
+
+    position: relative;
+    width:100%;
+    max-width: 800px;
+    height: 450px;
+    border: 1px solid #26474E;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.van-body{
+
+    height: 73%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    gap: .5rem;
+
+    position: relative;
+}
+
+.foottext-holder{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 100%;
+    text-align: center;
+  
+    
+    position: absolute;
+    z-index: 999999;
+    bottom: 0;
+    left: 0;
+}
+
+.headertext-holder{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 1rem;
+
+}
+
+.confirm-booking{
+    width: 100%;
+    height: 100%;
+    
+    font-size: 1.15rem;
+    padding: 1rem;
+    border: none;
+    background-color: #26474E;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    cursor: pointer;
+}
+
+.upper-booking-area{
+    margin-bottom: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.headertext-holder p{
+    font-size: .9rem;
+}
+.van-header{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.van-closer{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 99999999;
+
+    border: 1px solid #26474E;
+
+    display: flex;
+
+    border-radius: 5px;
+    background-color: white;
+
+    cursor: pointer;
+}
+
+.seat-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.seat{
+    border: 1px solid #26474E;
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+.seat.selected {
+    background-color: #ffcc00;
+  }
+  
+.seat.reserved {
+    background-color: #dc3545;
+    cursor: not-allowed;
+    color: white;
+}
+
+.receipt-header{
+    border-bottom: 1px solid #26474E;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding-bottom: .5rem;
+
+    text-align: center;
+}
+
+.receipt-footer{
+    padding: .5rem;
+    text-align: center;
+    border-top: 1px solid #26474E;
+    margin-top: .5rem;
+
+    position: relative;
+}
+
+.receipt-container{
+    border-radius: 10px;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    z-index: 9999999;
+    background-color: white;
+    height: 105%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.receipt-body{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.receipt-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.receipt-section h4{
+    margin-bottom: .5rem;
+}
+
+.pricing-section h4{
+    margin-bottom: .5rem;
+}
+
+.print-btn{
+    margin-top: 1rem;
+    padding: .3rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #26474E;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+.closer-icon{
+    color: #26474E;
+    font-size: 1.1rem;
+}
+@media (width <= 900px) {
+    .van-main{
+        margin-top: 4rem;
+    }
+}
+@media (width <= 544px) {
+    .receipt-container{
+        height: 110%;
+    }
+}
+@media (width <= 430px) {
+    .receipt-container{
+        height: 112%;
+    }
+}
+@media (width <= 425px) {
+    .receipt-container{
+        height: 116%;
+    }
+}
+@media (width <= 393px) {
+    .receipt-container{
+        height: 120%;
+    }
+}
+  
+  /* Print media query */
+  @media print {
+ 
+    body * {
+      visibility: hidden !important;
+    }
+  
+
+    .receipt-container {
+      visibility: visible !important;
+      display: block !important; 
+    }
+
+    .receipt-header,
+    .receipt-body,
+    .pricing-section,
+    .receipt-footer {
+      visibility: visible !important;
+      display: block !important; 
+    }
+  
+
+    .receipt-header h3,
+    .receipt-header p {
+      visibility: visible !important;
+    }
+  
+
+    .receipt-body h4,
+    .receipt-body p {
+      visibility: visible !important;
+    }
+
+    .pricing-section h4,
+    .pricing-section p {
+      visibility: visible !important;
+    }
+  
+    .receipt-footer p {
+      visibility: visible !important;
+    }
+
+    .receipt-body strong,
+    .pricing-section span,
+    .pricing-section strong,
+    .receipt-footer strong,
+    .receipt-body a,
+    .pricing-section a,
+    .receipt-footer a {
+      visibility: visible !important;
+      text-decoration: none; 
+    }
+  
+
+    .print-btn {
+      display: none !important;
+    }
+
+    .receipt-footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 30px;
+    }
+  }
+  

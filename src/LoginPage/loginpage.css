@@ -1,0 +1,139 @@
+.loginpage-container{
+    min-height: 85vh;
+
+    display: grid;
+    place-items: center;
+}
+
+.form-container{
+    display: flex;
+    max-width: 600px;
+
+    justify-content: center;
+}
+
+.login-header, .signup-header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .65rem;
+}
+
+.login-header h3, .signup-header h3{
+    font-size: 1.5rem;
+}
+
+.login-header-icon{
+    font-size: 3rem;
+    color: #26474E;
+}
+
+.login-form, .signup-form{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-box{
+    position: relative;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    padding: 0 12px;
+
+    border: 1px solid #26474E;
+    font-size: 1.05rem;
+    outline: none;
+}
+
+.placeholder{
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    pointer-events: none;
+
+    color: rgba(128, 128, 128, 0.5);
+    transition: all .2s ease-in-out;
+}
+
+.input-box input:valid ~ span,
+.input-box input:focus ~ span{
+    transform: translateY(-15px) translateX(15px);
+    letter-spacing: 5px;
+    background-color: white;
+    border: 1px solid #26474E;
+    color: #26474E;
+    padding: 4px 5px;
+    
+}
+
+.email-input:not(:placeholder-shown) ~ span{
+    transform: translateY(-15px) translateX(15px);
+    letter-spacing: 5px;
+    background-color: white;
+    border: 1px solid #26474E;
+    color: #26474E;
+    padding: 4px 5px;
+    
+}
+
+.submit-button{
+    width: 100%;
+    height: 50px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: white;
+    background-color: #26474E;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover{
+    background-color: #1a3236;
+}
+
+.form-footer{
+    margin-top: 1rem;
+    position: relative;
+    border-top: 1px solid rgba(128, 128, 128, 0.363);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.form-footer-header{
+    color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0 1rem;
+}
+
+.input-box .peeker{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+
+    cursor: pointer;
+    color: #1a3236;
+}
+
+.loginsignup-link{
+    color: #008B8B;
+}
+
+
+
+
+@media (width <= 700px){
+    .form-container{
+       padding: 1rem;
+    }
+}

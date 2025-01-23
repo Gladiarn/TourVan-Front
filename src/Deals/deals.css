@@ -33,6 +33,46 @@
 
 }
 
+.deals-btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.add-btn{
+    padding: .2rem .5rem;
+    border: 1px solid #26474E;
+    border-radius: 5px;
+
+    background-color: #26474E;
+    color: white;
+    transform: scale(1);
+    transition: transform .2s ease-in-out;
+
+    cursor: pointer;
+
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.add-btn:hover{
+    transform: scale(.95);
+}
+
+.check{
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+
+    color: #26474E;
+
+}
+
+.check input{
+    border: 1px solid #26474E;
+}
+
+
 @media (width <= 700px){
     .deals-header{
         font-size: .9rem;
